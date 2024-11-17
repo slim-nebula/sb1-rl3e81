@@ -1,0 +1,123 @@
+{
+  "settings": {
+    "plansPerRow": 4,
+    "layout": "cards",
+    "showComparisonTable": false,
+    "buttonStyle": "gradient",
+    "responsive": {
+      "mobile": {
+        "plansPerRow": 1,
+        "showFeatures": 3
+      },
+      "tablet": {
+        "plansPerRow": 2,
+        "showFeatures": 5
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "price": "$19",
+      "period": "/month",
+      "description": "Best for individuals",
+      "badge": "",
+      "icon": "package",
+      "features": [
+        "5 Virtual Tours",
+        "Basic Analytics",
+        "Standard Support",
+        "Mobile-Friendly Tours",
+        "Social Media Sharing"
+      ],
+      "ctaText": "Get Started",
+      "ctaUrl": "/signup?plan=basic",
+      "order": 1,
+      "isPopular": false,
+      "metadata": {
+        "metaTitle": "Basic Virtual Tour Plan - Showcase360",
+        "metaDescription": "Start your virtual tour journey with our Basic plan. Perfect for individuals and small businesses."
+      }
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "price": "$39",
+      "period": "/month",
+      "description": "Great for small teams",
+      "badge": "",
+      "icon": "briefcase",
+      "features": [
+        "20 Virtual Tours",
+        "Advanced Analytics",
+        "Email Support",
+        "Custom Branding",
+        "Lead Generation Forms",
+        "Virtual Staging Tools"
+      ],
+      "ctaText": "Get Started",
+      "ctaUrl": "/signup?plan=standard",
+      "order": 2,
+      "isPopular": false,
+      "metadata": {
+        "metaTitle": "Standard Virtual Tour Plan - Showcase360",
+        "metaDescription": "Upgrade to our Standard plan for advanced features and more virtual tours."
+      }
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": "$79",
+      "period": "/month",
+      "description": "Most popular plan",
+      "badge": "Most Popular",
+      "icon": "award",
+      "features": [
+        "Unlimited Virtual Tours",
+        "Advanced Analytics",
+        "Priority Support",
+        "Team Collaboration",
+        "API Access",
+        "Custom Domain",
+        "White Label Solution",
+        "Virtual Staging Tools"
+      ],
+      "ctaText": "Get Started",
+      "ctaUrl": "/signup?plan=pro",
+      "order": 3,
+      "isPopular": true,
+      "metadata": {
+        "metaTitle": "Pro Virtual Tour Plan - Showcase360",
+        "metaDescription": "Get unlimited virtual tours and premium features with our Pro plan."
+      }
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "Best for large businesses",
+      "badge": "",
+      "icon": "building",
+      "features": [
+        "Custom Solutions",
+        "Dedicated Account Manager",
+        "API Access",
+        "SLA Support",
+        "Custom Integrations",
+        "Training Sessions",
+        "Priority Development",
+        "Custom Analytics"
+      ],
+      "ctaText": "Contact Us",
+      "ctaUrl": "/contact?plan=enterprise",
+      "order": 4,
+      "isPopular": false,
+      "metadata": {
+        "metaTitle": "Enterprise Virtual Tour Plan - Showcase360",
+        "metaDescription": "Custom virtual tour solutions for large businesses and enterprises."
+      }
+    }
+  ]
+}

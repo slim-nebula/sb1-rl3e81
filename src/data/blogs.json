@@ -1,0 +1,40 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "The Future of Virtual Real Estate Tours",
+      "slug": "future-of-virtual-real-estate-tours",
+      "summary": "Discover how AI and VR are revolutionizing property viewings in 2024 and beyond.",
+      "content": "Virtual reality and artificial intelligence are transforming how we showcase and view properties. With advanced 360° cameras and immersive technologies, potential buyers can now experience properties from anywhere in the world as if they were there in person.\n\nThe integration of AI-powered features enhances these virtual tours by providing intelligent property insights, automated highlight detection, and personalized viewing experiences. This technology not only saves time for both realtors and buyers but also opens up new possibilities for international real estate transactions.",
+      "author": "Sarah Johnson",
+      "date": "2024-03-15",
+      "imageUrl": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=2378&h=1300",
+      "category": "Technology",
+      "tags": ["VR", "AI", "Real Estate", "Innovation"]
+    },
+    {
+      "id": "2",
+      "title": "Maximizing Property Value with Virtual Staging",
+      "slug": "maximizing-property-value-virtual-staging",
+      "summary": "Learn how virtual staging can increase property appeal and value without physical furniture.",
+      "content": "Virtual staging has become a game-changer in real estate marketing. This innovative approach allows properties to be presented in their best light without the substantial costs and logistics of traditional staging.\n\nBy utilizing advanced 3D modeling and design software, empty spaces can be transformed into beautifully furnished homes that help potential buyers envision the property's full potential. This not only reduces costs but also provides the flexibility to showcase multiple design styles for different target markets.",
+      "author": "Michael Chen",
+      "date": "2024-03-10",
+      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=2378&h=1300",
+      "category": "Design",
+      "tags": ["Virtual Staging", "Interior Design", "Marketing"]
+    },
+    {
+      "id": "3",
+      "title": "5 Tips for Creating Engaging Virtual Tours",
+      "slug": "5-tips-creating-engaging-virtual-tours",
+      "summary": "Expert advice on crafting virtual tours that capture and maintain viewer interest.",
+      "content": "Creating compelling virtual tours requires more than just good equipment. It's about storytelling, attention to detail, and understanding your audience's needs.\n\n1. Start with a clear narrative flow\n2. Optimize lighting and angles\n3. Include interactive hotspots\n4. Add informative annotations\n5. Ensure smooth transitions between spaces\n\nBy following these guidelines, you can create virtual tours that not only showcase properties effectively but also keep viewers engaged throughout the experience.",
+      "author": "Emily Rodriguez",
+      "date": "2024-03-05",
+      "imageUrl": "https://images.unsplash.com/photo-1613553507747-5f8d62ad5904?auto=format&fit=crop&q=80&w=2378&h=1300",
+      "category": "Tips & Tricks",
+      "tags": ["Virtual Tours", "Photography", "Best Practices"]
+    }
+  ]
+}

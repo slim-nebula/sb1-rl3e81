@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Smooth Scroll for Safari and iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Enhanced Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 15s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  background-size: 200% 200%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@layer base {
+  :root {
+    --color-primary: #0B5394;
+    --color-secondary: #1CC88A;
+    --color-accent: #F6C23E;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-[#0B5394] text-white rounded-lg
+           font-medium transition-all duration-300
+           hover:bg-[#094276] hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[#0B5394]/20;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-[#1CC88A] text-white rounded-lg
+           font-medium transition-all duration-300
+           hover:bg-[#18B37C] hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[#1CC88A]/20;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-[#F6C23E] text-white rounded-lg
+           font-medium transition-all duration-300
+           hover:bg-[#E5B02D] hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[#F6C23E]/20;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 bg-white text-[#0B5394] border-2 border-[#0B5394] rounded-lg
+           font-medium transition-all duration-300
+           hover:bg-[#0B5394] hover:text-white hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[#0B5394]/20;
+  }
+
+  .gradient-primary {
+    @apply bg-gradient-to-r from-[#0B5394] to-[#094276];
+  }
+
+  .gradient-secondary {
+    @apply bg-gradient-to-r from-[#1CC88A] to-[#18B37C];
+  }
+
+  .gradient-brand {
+    @apply bg-gradient-to-r from-[#0B5394] via-[#1CC88A] to-[#F6C23E];
+  }
+
+  .gradient-subtle {
+    @apply bg-gradient-to-r from-[#0B5394]/10 to-[#0B5394]/5;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#0B5394] to-[#1CC88A] bg-clip-text text-transparent;
+  }
+
+  .hover-primary {
+    @apply transition-colors duration-300 hover:text-[#0B5394];
+  }
+
+  .hover-secondary {
+    @apply transition-colors duration-300 hover:text-[#1CC88A];
+  }
+
+  .hover-accent {
+    @apply transition-colors duration-300 hover:text-[#F6C23E];
+  }
+
+  .input-primary {
+    @apply px-4 py-3 rounded-lg border border-gray-200
+           focus:border-[#0B5394] focus:ring-2 focus:ring-[#0B5394]/20
+           transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg transition-all duration-300
+           hover:border-[#0B5394]/20 hover:bg-gradient-to-br
+           hover:from-white hover:to-[#0B5394]/5;
+  }
+
+  .badge-primary {
+    @apply px-2.5 py-0.5 text-sm font-medium rounded-full
+           bg-[#0B5394]/10 text-[#0B5394];
+  }
+
+  .badge-secondary {
+    @apply px-2.5 py-0.5 text-sm font-medium rounded-full
+           bg-[#1CC88A]/10 text-[#1CC88A];
+  }
+
+  .badge-accent {
+    @apply px-2.5 py-0.5 text-sm font-medium rounded-full
+           bg-[#F6C23E]/10 text-[#F6C23E];
+  }
+
+  /* Smooth Scroll Container */
+  .smooth-scroll-container {
+    @apply transition-all duration-500 ease-in-out;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Glass effect */
+.glass-card {
+  @apply backdrop-blur-sm bg-white/90 border border-[#0B5394]/10 shadow-lg;
+}
